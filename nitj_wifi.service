@@ -1,0 +1,12 @@
+[Unit]
+Description=NITJ WiFi Auto Login Facility
+After=network.target
+
+[Service]
+Environment="username=usernameplaceholder" "password=passwordplaceholder"
+ExecStart=/opt/my_services/nitj_wifi_script.sh start
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
