@@ -1,4 +1,3 @@
-```markdown
 # NITJ WiFi Auto-Login Script
 
 This is a simple Bash-based automation script that connects to the `NITJ-WiFi` network and performs the captive portal login automatically. It uses a `systemd` service to ensure the script runs on startup or whenever there is no active internet connection.
@@ -9,7 +8,7 @@ This is a simple Bash-based automation script that connects to the `NITJ-WiFi` n
 
 ```
 
-nitj\_wifi\_autologin/
+NITJ_AutoLogin/
 ├── nitj\_wifi.service       # systemd service file
 ├── nitj\_wifi\_script.sh     # main auto-login script
 ├── install.sh              # installs and enables the systemd service
@@ -88,11 +87,4 @@ tail -f /tmp/nitj_wifi.log
 
 ## License
 
-This project is licensed under the MIT License.
-
-```
-
----
-
-Let me know if you want to include usage instructions for different distros, add environment variable support, or anything else!
-```
+This project is licensed under the [MIT License](./LICENSE).
